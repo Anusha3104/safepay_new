@@ -1,0 +1,126 @@
+2026-04-20 15:56:12 [INFO    ] safepay.db — ✅ Database initialised at /Users/anusha/Desktop/safepay_new/backend/safepay.db
+2026-04-20 15:56:13 [INFO    ] safepay.fraud — Fraud model loaded — 432 features
+2026-04-20 15:56:13 [INFO    ] safepay — ✅ SafePay app created — routes registered
+2026-04-20 15:56:13 [INFO    ] safepay — 🚀 SafePay backend starting on http://127.0.0.1:5000
+2026-04-20 15:56:13 [INFO    ] werkzeug — [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-20 15:56:13 [INFO    ] werkzeug — [33mPress CTRL+C to quit[0m
+2026-04-20 15:56:13 [INFO    ] werkzeug —  * Restarting with stat
+2026-04-20 15:56:13 [INFO    ] safepay.db — ✅ Database initialised at /Users/anusha/Desktop/safepay_new/backend/safepay.db
+2026-04-20 15:56:14 [INFO    ] safepay.fraud — Fraud model loaded — 432 features
+2026-04-20 15:56:14 [INFO    ] safepay — ✅ SafePay app created — routes registered
+2026-04-20 15:56:14 [INFO    ] safepay — 🚀 SafePay backend starting on http://127.0.0.1:5000
+2026-04-20 15:56:14 [WARNING ] werkzeug —  * Debugger is active!
+2026-04-20 15:56:14 [INFO    ] werkzeug —  * Debugger PIN: 767-169-908
+2026-04-20 15:56:58 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:56:58] "OPTIONS /register HTTP/1.1" 200 -
+2026-04-20 15:56:58 [INFO    ] safepay.auth — New user registered: arshin from 127.0.0.1
+2026-04-20 15:56:58 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:56:58] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "OPTIONS /login HTTP/1.1" 200 -
+2026-04-20 15:57:12 [INFO    ] safepay.auth — Login SUCCESS: arshin from 127.0.0.1
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "POST /login HTTP/1.1" 200 -
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:57:12 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:12] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:57:29 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:29] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:29 [INFO    ] safepay.fraud — FraudScore[arshin] ml=0.5 rule=25.0 combined=7.8 level=LOW block=False otp=False
+2026-04-20 15:57:29 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:29] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:30 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:30] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:30 [INFO    ] safepay.fraud — FraudScore[arshin] ml=9.8 rule=25.0 combined=14.3 level=LOW block=False otp=False
+2026-04-20 15:57:30 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:30] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] safepay.fraud — FraudScore[arshin] ml=9.8 rule=25.0 combined=14.3 level=LOW block=False otp=False
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "OPTIONS /transfer HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] safepay.fraud — FraudScore[arshin] ml=9.8 rule=25.0 combined=14.3 level=LOW block=False otp=False
+2026-04-20 15:57:34 [INFO    ] safepay.payments — Transfer SUCCESS: arshin -> annu Rs.300.00 (score=14.3)
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "POST /transfer HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:57:34 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:34] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:57:52 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:52] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:52 [INFO    ] safepay.fraud — FraudScore[arshin] ml=0.5 rule=0.0 combined=0.3 level=LOW block=False otp=False
+2026-04-20 15:57:52 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:52] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:53 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:53] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:53 [INFO    ] safepay.fraud — FraudScore[arshin] ml=8.8 rule=0.0 combined=6.2 level=LOW block=False otp=False
+2026-04-20 15:57:53 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:53] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:55 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:55] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:55 [INFO    ] safepay.fraud — FraudScore[arshin] ml=8.0 rule=20.0 combined=11.6 level=LOW block=False otp=False
+2026-04-20 15:57:55 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:55] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:59 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:59] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:57:59 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=20.0 combined=11.5 level=LOW block=False otp=False
+2026-04-20 15:57:59 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:57:59] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:05 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:05] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:05 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=35.0 combined=16.0 level=LOW block=False otp=False
+2026-04-20 15:58:05 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:05] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:11 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:11] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:11 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=35.0 combined=16.0 level=LOW block=False otp=False
+2026-04-20 15:58:11 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:11] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:20 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:20] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:20 [INFO    ] safepay.fraud — FraudScore[arshin] ml=0.5 rule=0.0 combined=0.3 level=LOW block=False otp=False
+2026-04-20 15:58:20 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:20] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:22 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:22] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:22 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=20.0 combined=11.5 level=LOW block=False otp=False
+2026-04-20 15:58:22 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:22] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:22 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:22] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:22 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=35.0 combined=16.0 level=LOW block=False otp=False
+2026-04-20 15:58:22 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:22] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:25 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:25] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:25 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=35.0 combined=16.0 level=LOW block=False otp=False
+2026-04-20 15:58:25 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:25] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:58:25 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:25] "OPTIONS /transfer HTTP/1.1" 200 -
+2026-04-20 15:58:25 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:25] "[31m[1mPOST /transfer HTTP/1.1[0m" 400 -
+2026-04-20 15:58:30 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:30] "OPTIONS /transactions?limit=15&offset=0 HTTP/1.1" 200 -
+2026-04-20 15:58:30 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:30] "GET /transactions?limit=15&offset=0 HTTP/1.1" 200 -
+2026-04-20 15:58:32 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:32] "OPTIONS /fraud-stats HTTP/1.1" 200 -
+2026-04-20 15:58:32 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:32] "GET /fraud-stats HTTP/1.1" 200 -
+2026-04-20 15:58:36 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:36] "OPTIONS /transactions?limit=15&offset=0 HTTP/1.1" 200 -
+2026-04-20 15:58:36 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:36] "GET /transactions?limit=15&offset=0 HTTP/1.1" 200 -
+2026-04-20 15:58:38 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:38] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:58:38 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:38] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:58:45 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:45] "OPTIONS /create-order HTTP/1.1" 200 -
+2026-04-20 15:58:45 [WARNING ] safepay.payments — Razorpay unavailable (No module named 'razorpay'). Demo order: order_DEMO_B874B58F2AD5
+2026-04-20 15:58:45 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:45] "POST /create-order HTTP/1.1" 200 -
+2026-04-20 15:58:49 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:49] "OPTIONS /verify-payment HTTP/1.1" 200 -
+2026-04-20 15:58:49 [INFO    ] safepay.payments — Payment verified: arshin +Rs.2000.00 -> balance=Rs.11700.00
+2026-04-20 15:58:49 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:49] "POST /verify-payment HTTP/1.1" 200 -
+2026-04-20 15:58:49 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:49] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:58:49 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:49] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:58:51 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:51] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:58:51 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:58:51] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:59:00 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:00] "OPTIONS /create-order HTTP/1.1" 200 -
+2026-04-20 15:59:00 [WARNING ] safepay.payments — Razorpay unavailable (No module named 'razorpay'). Demo order: order_DEMO_2E1250AF3E48
+2026-04-20 15:59:00 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:00] "POST /create-order HTTP/1.1" 200 -
+2026-04-20 15:59:02 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:02] "OPTIONS /verify-payment HTTP/1.1" 200 -
+2026-04-20 15:59:02 [INFO    ] safepay.payments — Payment verified: arshin +Rs.100000.00 -> balance=Rs.111700.00
+2026-04-20 15:59:02 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:02] "POST /verify-payment HTTP/1.1" 200 -
+2026-04-20 15:59:02 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:02] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:59:02 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:02] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:59:06 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:06] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:59:06 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:06] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:59:14 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:14] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:14 [INFO    ] safepay.fraud — FraudScore[arshin] ml=0.5 rule=15.0 combined=4.8 level=LOW block=False otp=False
+2026-04-20 15:59:14 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:14] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:15 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:15] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:15 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=30.0 combined=14.5 level=LOW block=False otp=False
+2026-04-20 15:59:15 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:15] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "OPTIONS /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=30.0 combined=14.5 level=LOW block=False otp=False
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "POST /fraud-check HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "OPTIONS /transfer HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] safepay.fraud — FraudScore[arshin] ml=7.8 rule=30.0 combined=14.5 level=LOW block=False otp=False
+2026-04-20 15:59:18 [INFO    ] safepay.payments — Transfer SUCCESS: arshin -> annu Rs.100000.00 (score=14.5)
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "POST /transfer HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:59:18 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:18] "GET /stats HTTP/1.1" 200 -
+2026-04-20 15:59:26 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:26] "OPTIONS /fraud-stats HTTP/1.1" 200 -
+2026-04-20 15:59:26 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:26] "GET /fraud-stats HTTP/1.1" 200 -
+2026-04-20 15:59:32 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:32] "OPTIONS /stats HTTP/1.1" 200 -
+2026-04-20 15:59:32 [INFO    ] werkzeug — 127.0.0.1 - - [20/Apr/2026 15:59:32] "GET /stats HTTP/1.1" 200 -
+2026-04-20 16:17:50 [INFO    ] werkzeug —  * Detected change in '/Users/anusha/Desktop/safepay_new/backend/app.py', reloading
+2026-04-20 16:17:50 [INFO    ] werkzeug —  * Restarting with stat
+2026-04-20 16:17:50 [INFO    ] safepay.db — ✅ Database initialised at /Users/anusha/Desktop/safepay_new/backend/safepay.db
+2026-04-20 16:17:51 [INFO    ] safepay.fraud — Fraud model loaded — 432 features
+2026-04-20 16:17:51 [INFO    ] safepay — ✅ SafePay app created — routes registered
+2026-04-20 16:17:51 [INFO    ] safepay — 🚀 SafePay backend starting on port 5000
+2026-04-20 16:17:51 [WARNING ] werkzeug —  * Debugger is active!
+2026-04-20 16:17:51 [INFO    ] werkzeug —  * Debugger PIN: 767-169-908
